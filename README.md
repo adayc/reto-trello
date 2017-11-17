@@ -1,12 +1,15 @@
-# App Lista de Tareas con Javascript
+# Menu drop down
+_____________
 
-![Thumb](https://raw.githubusercontent.com/falconmasters/lista-tareas/master/img/Como%20hacer%20una%20App%20Lista%20de%20Tareas%20con%20Javascript.jpg)
 
-Demo: http://codepen.io/falconmasters/pen/RWrYaP
+El menú drop down nos ayuda a ahorrar espacio en un menú, ya que agrupa elementos similares.
 
-### Tutorial: [http://www.falconmasters.com/javascript/app-lista-tareas-javascript/](http://www.falconmasters.com/javascript/app-lista-tareas-javascript/)
 
-Por [Carlos Arturo](http://www.twitter.com/falconmasters)
-## [FalconMasters, Blog de Diseño y Desarrollo Web](http://www.falconmasters.com)
 
----
+![Menu-hamburguesa](assets/imgs/menu-drop-down.gif)
+
+## Detalles adicionales
+-Para este maquetado se empleo : HTML5, CSS3 y Javascript.
+
+  
+  Cualquier consulta, duda o sugerencia puede realizarla al correo: adayc@hotmail.com
