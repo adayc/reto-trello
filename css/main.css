@@ -19,6 +19,13 @@ body
 font-family:sans-serif;
 }
 
+#to-do{
+  border:solid 2px #87ceeb;
+  width:500px;
+  float: left;
+}
+
+
 .list-title{
   border: 1px solid aqua;
   width: 300px;

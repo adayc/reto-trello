@@ -7,6 +7,8 @@ var linkTask = document.getElementById('add-task');
 var linkList = document.getElementById('add-list');
 var listTitle = document.getElementById('list-title');
 var btnTitle= document.getElementById('send-title');
+var toDo=document.getElementById('to-do');
+
 
 window.addEventListener('load', function(event) {
 // Desapareciendoel titulo de la lista
@@ -28,18 +30,26 @@ btnTitle.classList.add('not-see')
     btnTitle.classList.remove('not-see')
     this.classList.add('not-see');
     console.log(this);
+
   });
 
 
   btnTitle.addEventListener('click', function(event) {
     // Añadiendo tweet
     if (listTitle.innerHTML != '') {
+      cln=document.body.appendChild(toDo.cloneNode(true));
+      cln.children;
+      cln.children[0].children[1].innerHTML='';
+      cln.children[0].children[1].focus();
+
+      
       listTitle.contentEditable = false;
       this.classList.add('not-see');
       this.classList.remove('see');
       linkTask.classList.add('see');
       linkTask.classList.remove('not-see');
-      alert('ya casi');
+      
+      
     }
   });
 
