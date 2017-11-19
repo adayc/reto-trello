@@ -1,0 +1,109 @@
+
+ /*Configuracion inicial de la página*/
+
+ * {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+/* margin:0;
+ padding: 0;*/
+}
+
+body
+{
+ background-color:#FFE5CC;
+ /*background-image: url('../assets/imgs/coder.png');*/
+ background-position:center top; /*Posicionamos el fondo en el centro*/
+ background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
+ background-size: 50%;/*Ajustamos el tamaño de la imagen de fondo*/
+font-family:sans-serif;
+}
+
+.list-title{
+  border: 1px solid aqua;
+  width: 300px;
+}
+
+#list-title:empty:not(:focus):before {
+  content:attr(placeholder);
+  color:gray
+}
+
+.all-tasks{
+  border: 1px solid green;
+  width:500px;
+  
+}
+
+
+/* No colocar propiedades de display*/
+
+#task-box{
+  width:300px;
+  margin:5px;
+  border-radius:5px;
+  border: 1px solid red;
+  
+}
+
+
+#task-box:empty:not(:focus):before {
+  content:attr(placeholder);
+  color:gray
+}
+
+
+
+
+
+.not-see {
+  display:none;
+}
+.see{
+  display:block;
+}
+
+/* No colocar propiedades de display*/
+.task-content{
+  padding: 5px;
+  width:400px;
+  outline: solid 2px blue;
+  
+}
+
+/* No colocar propiedades de display*/
+.task{
+  margin-top:5px;
+  
+  border: solid 2px red;
+  background:white;
+  font-weight:italic;
+  
+  border-radius:5px;
+}
+/* No colocar propiedades de display*/
+.add-task{
+  border:none;
+  color:#838c91;
+  background:#e2e4e6;
+ 
+  text-align:left;
+  text-decoration: none;
+  
+  font-size: 20px;
+  
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  border-radius: 4px;
+  
+  width:250px;
+
+}
+
+
+/*para cambiar a blanco y letras verdes al hacer click*/
+.add-task:hover{
+  background:#c0c0c0;
+  color:black;
+  text-decoration: underline;
+}
