@@ -8,14 +8,14 @@
    <!-- Hojas de estilo para iconos awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Hojas de estilo para este proyecto  -->
- 
 <link href="css/main.css" rel="stylesheet"> 
 </head>
 <body>
+  <!-- Header que incluye los datos del usuario -->
     <header>
         <div class="tables">
-           <span><i class="fa fa-trello" aria-hidden="true"></i></span>
-             <h4 class="tabs-letter"> Tableros</h4>
+          <span><i class="fa fa-trello" aria-hidden="true"></i></span>
+          <h4 class="tabs-letter"> Tableros</h4>
         </div>
         <div class="tables search-box">
           <input type="text">
@@ -25,46 +25,39 @@
           TRELLO
         </div>
         <div class="icons-list">
-            <span><i class="fa fa-plus" aria-hidden="true"></i></span>
-            <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
-            <span><i class="fa fa-bell-o" aria-hidden="true"></i></span>
-            <div class="user">
-              Ada Lovelace
-            </div>
+          <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+          <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+          <span><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+          <div class="user">
+            Ada Lovelace
+          </div>
         </div>
   </header>
   <main id="all-to-do">
-    
- <section id="to-do">
-  
-  
-  <div class="form-list" id="form-list">
-    <div class="add-list" id="add-list">
-    Añadir lista
-  </div>
-    <div name="list" id="list-title"  class="list-title" contenteditable="true" placeholder="Añadiendo nombre de lista.."></div>
-    <button type="submit" class="send" id="send-title">Añadir</button>
-  </div> 
-  
-  <div id="all-tasks" class="all-tasks">
-    <div class="add-task" id="add-task">
-      Añadir tarea
-    </div> 
-    <div id="task-content" class="task-content">
-     
-    </div>
-        
-      
-    <div class="task-content">
-      <div name="task" id="task-box"  contenteditable="true" placeholder="Añadiendo tarea"></div>
-      <button type="submit" class="send" id="send-task">Añadir</button>
-    </div>
-  </div>
-
- </section>
-</main>
+    <section id="to-do">
+      <!-- Formulario que añadirá una lista -->
+      <div class="form-list" id="form-list">
+        <div class="add-list" id="add-list">
+          Añadir lista
+        </div>
+        <div name="list" id="list-title"  class="list-title" contenteditable="true" placeholder="Añadiendo nombre de lista.."></div>
+        <button type="submit" class="send" id="send-title">Añadir</button>
+      </div> 
+      <!-- Contenedor de tareas -->
+      <div id="all-tasks" class="all-tasks">
+        <div class="add-task" id="add-task">
+          Añadir tarea
+        </div> 
+        <div id="task-content" class="task-content">
+        </div>
+        <div class="task-content">
+          <div name="task" id="task-box"  contenteditable="true" placeholder="Añadiendo tarea"></div>
+          <button type="submit" class="send" id="send-task">Añadir</button>
+        </div>
+      </div>
+    </section>
+  </main>
  <script src="js/app.js">
  </script>
 </body>
-
 </html>
