@@ -12,56 +12,12 @@
 body
 {
  background-color:#FFE5CC;
- /*background-image: url('../assets/imgs/coder.png');*/
+ background-image: url('../assets/imgs/bg-salar.jpg');
  background-position:center top; /*Posicionamos el fondo en el centro*/
  background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
- background-size: 50%;/*Ajustamos el tamaño de la imagen de fondo*/
-font-family:sans-serif;
+
+font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
-#to-do{
-  border:solid 2px #87ceeb;
-  width:500px;
-  float: left;
-}
-
-
-.list-title{
-  border: 1px solid aqua;
-  width: 300px;
-}
-
-#list-title:empty:not(:focus):before {
-  content:attr(placeholder);
-  color:gray
-}
-
-.all-tasks{
-  border: 1px solid green;
-  width:500px;
-  
-}
-
-
-/* No colocar propiedades de display*/
-
-#task-box{
-  width:300px;
-  margin:5px;
-  border-radius:5px;
-  border: 1px solid red;
-  
-}
-
-
-#task-box:empty:not(:focus):before {
-  content:attr(placeholder);
-  color:gray
-}
-
-
-
-
 
 .not-see {
   display:none;
@@ -70,41 +26,113 @@ font-family:sans-serif;
   display:block;
 }
 
-/* No colocar propiedades de display*/
-.task-content{
-  padding: 5px;
-  width:400px;
-  outline: solid 2px blue;
+#to-do{
+  background: #e2e4e6;
+  border-radius:5px;
+  width:250px;
+  float: left;
+  margin:10px;
+  padding:10px;
+}
+
+.add-list{
+  
+  background-color: rgba(0,0,0,0.1);
+  cursor:pointer;
+  padding:5px;
+}
+
+.add-list:hover{
+  
+  background-color: rgba(0,0,0,0.3);
   
 }
 
+
+  
+.list-title{
+  
+  margin:6px;
+  font-weight:bold;
+  padding: 5px;
+  
+}
+
+#list-title:empty:not(:focus):before {
+  content:attr(placeholder);
+  color:gray
+}
+
+
+
+
+.send{
+  background-color:#5aac44;
+  border-radius: 5px;
+  color:#e2e4e6;
+  cursor: pointer;
+  font-weight:bold;
+  padding: 5px 15px;
+  
+}
+
+
+
 /* No colocar propiedades de display*/
+
+
+#task-box{
+  
+  background: white;
+  border-radius:5px;
+  
+  margin:5px 0px;
+  font-weight:bold;
+  padding: 5px;
+}
+
+
+#task-box:empty:not(:focus):before {
+  content:attr(placeholder);
+  color:gray
+}
+
 .task{
   margin-top:5px;
   
-  border: solid 2px red;
+  
   background:white;
   font-weight:italic;
   
   border-radius:5px;
+  padding: 5px; 
 }
+
+
+
+
+
+
+/* No colocar propiedades de display*/
+
+
+/* No colocar propiedades de display*/
+
 /* No colocar propiedades de display*/
 .add-task{
   border:none;
   color:#838c91;
   background:#e2e4e6;
  
-  text-align:left;
-  text-decoration: none;
+ 
+ padding: 5px;
   
-  font-size: 20px;
+  
   
   cursor: pointer;
-  font-family: 'Lato', sans-serif;
+
   border-radius: 4px;
   
-  width:250px;
-
 }
 
 
@@ -114,3 +142,4 @@ font-family:sans-serif;
   color:black;
   text-decoration: underline;
 }
+

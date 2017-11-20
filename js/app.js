@@ -12,12 +12,12 @@ var toDo=document.getElementById('to-do');
 
 window.addEventListener('load', function(event) {
 // Desapareciendoel titulo de la lista
-  listTitle.classList.add('not-see');
+ listTitle.classList.add('not-see');
   // Desapareciendo boton añadir tarea
-  linkTask.classList.add('not-see');
+linkTask.classList.add('not-see');
   // Desapareciendo los cuadros de tareas
-  taskcontents[0].classList.add('not-see');//
-  taskcontents[1].classList.add('not-see');
+taskcontents[0].classList.add('not-see');//
+ taskcontents[1].classList.add('not-see');
 // Desaparecer boton title
 btnTitle.classList.add('not-see')
 
@@ -27,16 +27,17 @@ btnTitle.classList.add('not-see')
     listTitle.classList.add('see');
     listTitle.classList.remove('not-see');
     btnTitle.classList.add('see');
-    btnTitle.classList.remove('not-see')
+    btnTitle.classList.remove('not-see');
+    listTitle.focus();
     this.classList.add('not-see');
-    console.log(this);
+    
 
   });
 
 
   btnTitle.addEventListener('click', function(event) {
     // Añadiendo tweet
-    if (listTitle.innerHTML != '') {
+   // if (listTitle.innerHTML != '') {
       cln=document.body.appendChild(toDo.cloneNode(true));
       cln.children;
       cln.children[0].children[1].innerHTML='';
@@ -50,7 +51,7 @@ btnTitle.classList.add('not-see')
       linkTask.classList.remove('not-see');
       
       
-    }
+  //  }
   });
 
 
@@ -66,7 +67,8 @@ btnTitle.classList.add('not-see')
     taskcontents[1].classList.add('see');
     this.classList.add('not-see');
     this.classList.remove('see');
-    console.log(this);
+    task.focus();
+    
   });
 
 

@@ -11,18 +11,23 @@
 <link href="css/main.css" rel="stylesheet"> 
 </head>
 <body>
- <div id="to-do">
+  <header></header>
+  <main id="all-to-do">
+    
+ <section id="to-do">
   
   
   <div class="form-list" id="form-list">
-    <a href="#" id="add-list" class="add-list">Añadir lista</a>
+    <div class="add-list" id="add-list">
+    Añadir lista
+  </div>
     <div name="list" id="list-title"  class="list-title" contenteditable="true" placeholder="Añadiendo nombre de lista.."></div>
-    <button type="submit" class="" id="send-title">Añadir</button>
+    <button type="submit" class="send" id="send-title">Añadir</button>
   </div> 
   
   <div id="all-tasks" class="all-tasks">
-    <div class="add-task">
-      <a href="#" id="add-task" class="add-task">Añadir tarea</a>
+    <div class="add-task" id="add-task">
+      Añadir tarea
     </div> 
     <div id="task-content" class="task-content">
      
@@ -31,12 +36,12 @@
       
     <div class="task-content">
       <div name="task" id="task-box"  contenteditable="true" placeholder="Añadiendo tarea"></div>
-      <button type="submit" class="" id="send-task">Añadir</button>
+      <button type="submit" class="send" id="send-task">Añadir</button>
     </div>
   </div>
 
-</div>
- 
+ </section>
+</main>
  <script src="js/app.js">
  </script>
 </body>
