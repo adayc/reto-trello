@@ -19,6 +19,71 @@ body
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header {
+  width: 100%;
+ 
+  padding: 5px;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.1);
+ 
+  color: white;
+  position: relative;
+ }
+
+ .tables {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 8px;
+  border-radius: 5px;
+  margin: 5px;;
+}
+
+.tabs-letter {
+  display: inline;
+}
+.search-box {
+  border-radius: 5px;
+  padding: 8px;
+}
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.trello-title {
+  display: inline-block;
+  font-style: oblique;
+  font-weight:bold;
+
+  /*para centrar el texto sin saber el tamaño del contenedor padre*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.icons-list {
+  display: inline-block;
+  float: right;
+  margin-top: 3px;
+}
+.icons-list span {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.icons-list .user {
+display: inline-block;
+border-radius: 5px;
+background-color: lightsalmon;
+padding:8px;
+font-size: 18px;
+}
+
+
+
 .not-see {
   display:none;
 }
