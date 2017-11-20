@@ -1,50 +1,49 @@
-
  /*Configuracion inicial de la página*/
 
  * {
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;
-/* margin:0;
- padding: 0;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
 }
 
 body
 {
- background-color:#FFE5CC;
- background-image: url('../assets/imgs/bg-salar.jpg');
- background-position:center top; /*Posicionamos el fondo en el centro*/
- background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
-
-font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color:#FFE5CC;
+  background-image: url('../assets/imgs/bg-salar.jpg');
+  background-position:center top; /*Posicionamos el fondo en el centro*/
+  background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+ /*Clases que le dan estilo al header*/
 header {
-  width: 100%;
- 
-  padding: 5px;
-  overflow: auto;
   background-color: rgba(0,0,0,0.1);
- 
   color: white;
+  overflow: auto;
+  padding: 5px;
   position: relative;
+  width: 100%;
  }
 
  .tables {
   display: inline-block;
   background: rgba(255, 255, 255, 0.3);
-  padding: 8px;
   border-radius: 5px;
-  margin: 5px;;
+  margin: 5px;
+  padding: 8px;
 }
 
 .tabs-letter {
   display: inline;
 }
+
 .search-box {
   border-radius: 5px;
   padding: 8px;
 }
+
 .search-box input {
   background: transparent;
   border: none;
@@ -55,18 +54,17 @@ header {
   display: inline-block;
   font-style: oblique;
   font-weight:bold;
-
-  /*para centrar el texto sin saber el tamaño del contenedor padre*/
-  position: absolute;
   left: 50%;
+  position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);/*centramos de acuerdo al tamaño del contenedor padre*/
 }
+
 .icons-list {
   display: inline-block;
-  float: right;
   margin-top: 3px;
 }
+
 .icons-list span {
   display: inline-block;
   background: rgba(255, 255, 255, 0.3);
@@ -74,16 +72,17 @@ header {
   font-size: 16px;
   border-radius: 5px;
 }
+
 .icons-list .user {
-display: inline-block;
-border-radius: 5px;
-background-color: lightsalmon;
-padding:8px;
-font-size: 18px;
+  border-radius: 5px;
+  background-color: lightsalmon;
+  display: inline-block;
+  font-size: 18px;
+  padding:8px;
 }
 
 
-
+ /*Clases que ocultarán y mostrarán los elementos de acuerdo al archivo js*/
 .not-see {
   display:none;
 }
@@ -91,45 +90,41 @@ font-size: 18px;
   display:block;
 }
 
+/*Clases que le dan estilo al main*/
+
 #to-do{
   background: #e2e4e6;
   border-radius:5px;
-  width:250px;
   float: left;
   margin:10px;
   padding:10px;
+  width:250px;
 }
 
+/*Clases para las listas */
 .add-list{
-  
   background-color: rgba(0,0,0,0.1);
   cursor:pointer;
   padding:5px;
 }
 
 .add-list:hover{
-  
   background-color: rgba(0,0,0,0.3);
-  
 }
 
-
-  
 .list-title{
-  
-  margin:6px;
   font-weight:bold;
+  margin:6px;
   padding: 5px;
   
 }
 
 #list-title:empty:not(:focus):before {
+  color:gray;
   content:attr(placeholder);
-  color:gray
 }
 
-
-
+/*Clase para el botón */
 
 .send{
   background-color:#5aac44;
@@ -141,67 +136,40 @@ font-size: 18px;
   
 }
 
-
-
-/* No colocar propiedades de display*/
-
+/*Clases para las tareas */
 
 #task-box{
-  
   background: white;
   border-radius:5px;
-  
-  margin:5px 0px;
   font-weight:bold;
+  margin:5px 0px;
   padding: 5px;
 }
 
 
 #task-box:empty:not(:focus):before {
+  color:gray;
   content:attr(placeholder);
-  color:gray
 }
 
 .task{
-  margin-top:5px;
-  
-  
   background:white;
-  font-weight:italic;
-  
   border-radius:5px;
+  font-weight:italic;
+  margin-top:5px;
   padding: 5px; 
 }
 
 
-
-
-
-
-/* No colocar propiedades de display*/
-
-
-/* No colocar propiedades de display*/
-
-/* No colocar propiedades de display*/
 .add-task{
-  border:none;
-  color:#838c91;
   background:#e2e4e6;
- 
- 
- padding: 5px;
-  
-  
-  
-  cursor: pointer;
-
+  border:none;
   border-radius: 4px;
-  
+  color:#838c91;
+  cursor: pointer;
+  padding: 5px;
 }
 
-
-/*para cambiar a blanco y letras verdes al hacer click*/
 .add-task:hover{
   background:#c0c0c0;
   color:black;
