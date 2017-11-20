@@ -61,7 +61,7 @@ header {
 }
 
 .icons-list {
-  display: inline-block;
+  float: right;
   margin-top: 3px;
 }
 
@@ -79,6 +79,7 @@ header {
   display: inline-block;
   font-size: 18px;
   padding:8px;
+ 
 }
 
 
